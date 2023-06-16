@@ -1,0 +1,69 @@
+
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgb(172, 159, 147); */
+    background-image: url("../../../assets/img/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .contact-details,
+  .message-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #dbdfdf;
+    border-radius: 10px;
+  }
+  .contact-details,
+  .message-section {
+    opacity: 0.9;
+  }
+  .contact-details h2,
+  .message-section h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .contact-details {
+    margin-right: 10px;
+  }
+  
+  .message-section {
+    margin-left: 10px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff8f8;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: gray;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e64400;
+  }
+  
