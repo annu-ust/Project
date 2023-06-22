@@ -26,4 +26,5 @@ export class SignupComponent {
     // Redirect to login page
     this.router.navigate(['/login']);
   }
+  
 }

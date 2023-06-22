@@ -1,0 +1,98 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair:ital,wght@1,300&display=swap" rel="stylesheet">
+<div class="banner">
+    <div class="left-content">
+      <div class="content">
+        <h1 class="mb-5">Are you feeling famished?</h1>
+        <p><i>Discover an array of conveniently available dining <br>options 
+          in your vicinity with just a few simple clicks.</i></p>
+        <a routerLink="menu">ORDER NOW</a>&nbsp;&nbsp;&nbsp;
+        <a routerLink="menu">BOOK TABLE</a><br><br>
+      </div>
+    </div>
+  
+    <div class="right-image-container">
+      <div class="slideshow">
+      <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height="450px " width="450px">
+      </div>    
+    </div>
+  </div>
+  
+
+<!-- step  -->
+<div class="container mt-5 mb-5">
+  <div class="nine">
+    <h1>SERVICES<span>Catering Services</span></h1>
+  </div>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>HEALTHY FOODS</p>
+            </div>
+        </div>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>MASTER CHEFS</p>
+            </div>
+        </div>
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>ORIGINAL RECIPES</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!---->
+
+<!---->
+<!--About-->
+<div class="container mt-3 mb-3">
+    <div class="about">
+        <div class="heading">
+      <h1 class="text-center"><b>Welcome to NaAsS </b></h1>
+      <p class="text-center" style="color: gray;font-size: 25px;"><i>Savor Every Bite, Cherish Every Moment</i></p>
+        </div>
+      
+    <div class="book-container">
+        <div class="left-page">
+          <carousel>
+            <slide *ngFor="let image of images">
+              <img [src]="image.url" alt="Slide Image">
+            </slide>
+          </carousel>
+        </div>
+        <div class="right-page">
+          <div class="about-content">
+            <p>Welcome to NaAsS, a culinary destination where taste, ambiance, and exceptional service converge to create an unforgettable dining experience. Our restaurant is renowned for its exquisite cuisine, expertly prepared by our talented chefs who skillfully blend flavors and ingredients to delight your palate.</p>
+            <a routerLink="about" class="read-more">read more</a>
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- foodbox  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center"><b>Customers Favourites Food</b></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
+            <div class="foodbox" *ngIf="i<=3">
+                <img src="{{fd.foodImg}}" />
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodPrice | currency:'INR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div> 

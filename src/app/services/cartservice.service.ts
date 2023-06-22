@@ -7,47 +7,6 @@ import { CartItem } from '../model/cartitem';
 })
 
 export class CartserviceService {
-  // cartItems: any[] = [];
-
-  // constructor() {
-  //   this.cartItems = [];
-  // }
-
-  // addToCart(item: any) {
-  //   const existingItem = this.cartItems.find((cartItem) => cartItem.foodId === item.foodId);
-
-  //   if (existingItem) {
-  //     existingItem.quantity++;
-  //   } else {
-  //     const newItem = { ...item, quantity: 1 };
-  //     this.cartItems.push(newItem);
-  //   }
-  // }
-
-  // getCartItems() {
-  //   return this.cartItems;
-  // }
-  // removeCartItem(index: number) {
-  //   this.cartItems.splice(index, 1);
-  // }
-  
-  // incrementQuantity(item: any) {
-  //   item.quantity++;
-  // }
-
-  // decrementQuantity(item: any) {
-  //   if (item.quantity > 1) {
-  //     item.quantity--;
-  //   }
-  // }
-
-  // calculateTotalAmount() {
-  //   let total = 0;
-  //   for (const item of this.cartItems) {
-  //     total += item.foodPrice * item.quantity;
-  //   }
-  //   return total;
-  // }
  
   cartItems: CartItem[] = [];
 

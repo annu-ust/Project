@@ -6,8 +6,10 @@
     <div class="content">
         <h1 class="mb-5">Discover The Perfect <BR> Blend Of Flavors <BR>In Every Dish.</h1>
         
-            <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>&nbsp;&nbsp;&nbsp;
-        <!--<a routerLink="menu">VIEW MENU <i class="bi bi-arrow-right"></i></a><br><br>-->
+            <!-- <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>&nbsp;&nbsp;&nbsp;
+        <a routerLink="menu">BOOK TABLE<i class="bi bi-arrow-right"></i></a><br><br> -->
+        <a routerLink="menu">VIEW MENU </a>&nbsp;&nbsp;&nbsp;
+        <!-- <a routerLink="menu">BOOK TABLE</a><br><br> -->
         
     </div>
 </div>
@@ -52,13 +54,15 @@
       
     <div class="book-container">
         <div class="left-page">
-          <div class="about-image">
-            <img src="assets\img\bannering.jpg" height="500" width="600">
-          </div>
+          <carousel>
+            <slide *ngFor="let image of images">
+              <img [src]="image.url" alt="Slide Image">
+            </slide>
+          </carousel>
         </div>
         <div class="right-page">
           <div class="about-content">
-            <p>Welcome to NASS, a culinary destination where taste, ambiance, and exceptional service converge to create an unforgettable dining experience. Our restaurant is renowned for its exquisite cuisine, expertly prepared by our talented chefs who skillfully blend flavors and ingredients to delight your palate.</p>
+            <p>Welcome to NaAsS, a culinary destination where taste, ambiance, and exceptional service converge to create an unforgettable dining experience. Our restaurant is renowned for its exquisite cuisine, expertly prepared by our talented chefs who skillfully blend flavors and ingredients to delight your palate.</p>
             <a routerLink="about" class="read-more">read more</a>
           </div>
         </div>

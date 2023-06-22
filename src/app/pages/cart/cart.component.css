@@ -93,7 +93,7 @@
   .pay {
     font-size: 16px;
     padding: 8px 16px;
-    background-color: #3498db;
+    background-color:var(--secondary-color);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -102,7 +102,7 @@
   }
   
  .pay:hover {
-    background-color: #2980b9;
+    background-color: var(--primary-color);
   }
   .cart-items div button {
     margin-top: 10px;

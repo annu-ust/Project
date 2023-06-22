@@ -20,6 +20,9 @@ import { FetchComponent } from './admin/fetch/fetch.component';
 import { UpdateComponent } from './admin/update/update.component';
 import { DeleteComponent } from './admin/delete/delete.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
+import { UserhomeComponent } from './pages/userhome/userhome.component';
 
 
 @NgModule({
@@ -40,11 +43,14 @@ import { CartComponent } from './pages/cart/cart.component';
     FetchComponent,
     UpdateComponent,
     DeleteComponent,
-    CartComponent
+    CartComponent,
+    AdminloginComponent,
+    UserhomeComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

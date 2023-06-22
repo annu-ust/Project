@@ -18,12 +18,12 @@ export class LoginComponent {
  
   login() {
     
-    this.router.navigate(['/']);
+    this.router.navigate(['/userhome']);
    
   }
     navigateToReset() {
       this.router.navigateByUrl('/reset-password');
     }
-  
+ 
   
 }

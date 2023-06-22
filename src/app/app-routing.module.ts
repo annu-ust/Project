@@ -10,9 +10,12 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UserhomeComponent } from './pages/userhome/userhome.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
+  {path:'userhome',component:UserhomeComponent},
   {path:'menu',component:MenuComponent},
   {path:'menu/:id',component:MenuComponent},
   {path:'about',component:AboutComponent},

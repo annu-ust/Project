@@ -15,6 +15,17 @@ export class HomeComponent implements OnInit {
     this.foodData = this.service.foodDetails;
     
   }
+  images = [
+     { url: '../../../assets/img/bannering.jpg'},
+    { url: '../../../assets/img/pic1.jpg' },
+     { url: '../../../assets/img/pic2.jpg' },
+    { url: '../../../assets/img/pic3.jpg'},
+    { url: '../../../assets/img/pic6.jpg' },
+     { url: '../../../assets/img/pic5.jpg' },
+     { url: '../../../assets/img/pic4.jpg'},
+     { url: '../../../assets/img/pic7.png'}
+    
+  ];
   orderNow(){
     this.router.navigateByUrl('menu');
   }
