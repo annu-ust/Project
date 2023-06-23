@@ -23,6 +23,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { UserhomeComponent } from './pages/userhome/userhome.component';
+import { TableComponent } from './pages/table/table.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { UserhomeComponent } from './pages/userhome/userhome.component';
     DeleteComponent,
     CartComponent,
     AdminloginComponent,
-    UserhomeComponent
+    UserhomeComponent,
+    TableComponent
     
   ],
   imports: [

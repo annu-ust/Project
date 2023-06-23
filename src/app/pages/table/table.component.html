@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Book</title>
+  <style>
+    .book-container {
+      position: relative;
+      width: 700px;
+      height: 500px;
+      perspective: 800px;
+      margin: 0 auto;
+    }
+
+    .book {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: openBook 2s forwards;
+      transform-origin: left center;
+    }
+
+    @keyframes openBook {
+      0% {
+        transform: rotateY(10deg);
+      }
+      100% {
+        transform: rotateY(0deg);
+      }
+    }
+
+    .book-cover {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background-color: #f8f8f8;
+      border-radius: 5px 0 0 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transform-origin: left center;
+    }
+
+    .book-front {
+      right: 0;
+      background-color: #f8f8f8;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .book-back {
+      left: 0;
+    }
+
+    .signup-image img {
+      border-radius: 5px;
+    }
+
+    .signup-content {
+      padding: 20px;
+    }
+
+    .signup-heading {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #373a37;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-link a {
+      color: #302f2f;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      color: #0e0d0d;
+    }
+
+    @media (max-width: 768px) {
+      .book-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+      }
+
+      .book {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+      }
+
+      .signup-content {
+        position: static;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="book-container">
+    <div class="book">
+      <div class="book-cover book-front">
+        <div class="signup-content">
+          <div class="signup-image">
+            <img src="\assets\img\signup.jpg" height="450" width="320">
+          </div>
+        </div>
+      </div>
+      <div class="book-cover book-back">
+        <div class="signup-content">
+          <div class="signup-heading">
+            <b>Sign Up!</b>
+          </div>
+          <div class="form-group">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+              <label for="tel">Telephone Number</label>
+              <input type="tel" id="tel" name="tel">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time">
+              <label for="number">No. of guests</label>
+              <input type="number" id="number" name="number">
+              <label for="comments">Special Requests</label>
+              <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+              <input type="submit" value="Reserve Table" class="btn">
+            </form>
+          </div>
+          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=NEED KEY"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

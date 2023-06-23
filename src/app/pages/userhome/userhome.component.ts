@@ -15,6 +15,7 @@ export class UserhomeComponent {
     this.foodData = this.service.foodDetails;
     
   }
+
   images = [
      { url: '../../../assets/img/bannering.jpg'},
     { url: '../../../assets/img/pic1.jpg' },
@@ -30,5 +31,7 @@ export class UserhomeComponent {
   orderNow(){
     this.router.navigateByUrl('menu');
   }
-  
+  bookTable(){
+    this.router.navigateByUrl('table');
+  }
 }

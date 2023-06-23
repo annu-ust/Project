@@ -10,6 +10,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { TableComponent } from './pages/table/table.component';
 import { UserhomeComponent } from './pages/userhome/userhome.component';
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'reset-password',component:ResetpasswordComponent},
   {path:'payment',component:PaymentComponent},
-  {path:'admin',component:CreateComponent}
+  {path:'admin',component:CreateComponent},
+  {path:'table',component:TableComponent}
 
 
 ];
