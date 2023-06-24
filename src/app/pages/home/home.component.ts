@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     { url: '../../../assets/img/pic3.jpg'},
     { url: '../../../assets/img/pic6.jpg' },
      { url: '../../../assets/img/pic5.jpg' },
-     { url: '../../../assets/img/pic4.jpg'},
+     { url: 'https://images.pexels.com/photos/14705155/pexels-photo-14705155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
      { url: '../../../assets/img/pic7.png'}
     
   ];

@@ -236,84 +236,11 @@ font-family: 'Playfair', serif;
 /*----------*/
 
 
-.about{
-  margin-top: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-/*--------*/
+
 
 /*----*/
-.book-container {
-    display: flex;
-  }
-  
-  .left-page {
-    flex: 1;
-  }
-  
-  .right-page {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 20px;
-    font-size: 25px;
-  }
-  
-  .left-page img {
-    height: 500px;
-    width: 600px;
-    border-radius: 20px; /* Add border radius to create rounded corners */
-  box-shadow: 0 2px 4px rgba(41, 41, 41, 0.1); /* Apply a box shadow for a subtle effect */
-  object-fit: cover; /* Adjust how the image fits within the container */
-  filter: grayscale(20%); /* Apply a grayscale filter */
-  /* animation*/
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  
-   /* animation-name: slideIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out; */
-  /*animation-delay: 0.5s; */
-  /* animation-fill-mode: forwards; */
-  }
-  /* animation*/
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 5;
-    }
-  }
-  /* @keyframes slideIn {
-    0% {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-} */
 
-
-  .about-content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .read-more {
-    text-decoration: none;
-    background-color:var(--secondary-color);
-    color:whitesmoke;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 18px;
-  }
-  .read-more:hover {
-    background-color: var(--primary-color);
-  }
 
 .foodbox 
 {
@@ -352,4 +279,44 @@ font-family: 'Playfair', serif;
 {
     height: 700px;
 }
+}
+/*----------------------*/
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card {
+  background: linear-gradient(to bottom right, #42423f, #adacaa);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-rating {
+  font-size: 14px;
+  color: #ffffff99;
+}
+
+.review-description {
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-style: italic;
+  color: #ffffff99;
 }

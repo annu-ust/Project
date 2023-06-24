@@ -12,8 +12,8 @@
         <h1 class="mb-5">Are you feeling famished?</h1>
         <p><i>Discover an array of conveniently available dining <br>options 
           in your vicinity with just a few simple clicks.</i></p>
-        <a routerLink="menu" >ORDER NOW</a>&nbsp;&nbsp;&nbsp;
-        <a routerLink="table">BOOK TABLE</a><br><br>
+        <a routerLink="/menu" >ORDER NOW</a>&nbsp;&nbsp;&nbsp;
+        <a routerLink="/table">BOOK TABLE</a><br><br>
       </div>
     </div>
   
@@ -66,31 +66,11 @@
 <!---->
 <!--Specials-->
 <div class="container mt-3 mb-3">
-    <div class="about">
       <div class="nine">
-        <h1>SPECIALS<span>Check Our Specials</span></h1>
+        <h1>Something New<span>Customers Favourites Food</span></h1>
       </div>
       
-    <div class="book-container">
-        <div class="left-page">
-          <carousel>
-            <slide *ngFor="let image of images">
-              <img [src]="image.url" alt="Slide Image">
-            </slide>
-          </carousel>
-        </div>
-        <div class="right-page">
-          <div class="about-content">
-            <p>Welcome to NaAsS, a culinary destination where taste, ambiance, and exceptional service converge to create an unforgettable dining experience. Our restaurant is renowned for its exquisite cuisine, expertly prepared by our talented chefs who skillfully blend flavors and ingredients to delight your palate.</p>
-            <a routerLink="about" class="read-more">read more</a>
-          </div>
-        </div>
-      </div>
-  </div>
-<!-- foodbox  -->
-<div class="container mt-4 mb-4">
-    <h1 class="text-center"><b>Customers Favourites Food</b></h1>
-    <div class="row">
+      <div class="row">
         <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
             <div class="foodbox" *ngIf="i<=3">
                 <img src="{{fd.foodImg}}" />
@@ -100,4 +80,31 @@
         </div>
     </div>
     <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+    </div>
+        
+<!-- foodbox  -->
+<div class="container mt-4 mb-4">
+  <div class="nine">
+    <h1>Testimonials<span>What they're saying about us</span></h1>
+  </div>
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="review-header">
+        <h3 class="review-title">Delicious and Authentic</h3>
+        <p class="review-rating">Rating: 5 stars</p>
+      </div>
+      <p class="review-description">The food here is absolutely amazing. Every dish is bursting with flavor and cooked to perfection. I highly recommend trying their signature dishes. You won't be disappointed!</p>
+      <p class="review-author">- John Smith</p>
+    </div>
+    <div class="review-card">
+      <div class="review-header">
+        <h3 class="review-title">A Culinary Delight</h3>
+        <p class="review-rating">Rating: 4.5 stars</p>
+      </div>
+      <p class="review-description">I can't get enough of the food at this restaurant. The ingredients are always fresh, and the presentation is top-notch. It's a true culinary delight that keeps me coming back for more.</p>
+      <p class="review-author">- Jane Doe</p>
+    </div>
+  </div>
+  
+  
 </div> 
