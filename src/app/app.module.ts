@@ -24,6 +24,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { UserhomeComponent } from './pages/userhome/userhome.component';
 import { TableComponent } from './pages/table/table.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { TableComponent } from './pages/table/table.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule,CarouselModule.forRoot()
+    AppRoutingModule,FormsModule,ReactiveFormsModule,CarouselModule.forRoot(),HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
