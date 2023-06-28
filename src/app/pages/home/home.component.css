@@ -1,3 +1,4 @@
+
 .banner
 {
     background-image: url('../../../assets/img/burger.jpg');
@@ -388,9 +389,11 @@ border-radius: 5px;
 }
 
 /* Container styles */
+
 .specials {
   padding: 90px 0;
-  background-color: white;
+  /* background-color: white; */
+  
 }
 
 /* Section title styles */
@@ -415,8 +418,47 @@ border-radius: 5px;
 /* Specials tab styles */
 .specials .nav-tabs .nav-item {
   margin-bottom: 10px;
+  
+}
+/**/
+/* .col-lg-3 {
+  border: 1px solid black;
+  
+} */
+.gradient-border {
+  position: relative;
+  padding: 10px;
 }
 
+.gradient-border:before,
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-border:before {
+  z-index: -1;
+  background-image: linear-gradient(to right, #131212, #e8e8ed);
+}
+
+.gradient-border:after {
+  z-index: -1;
+  background-image: linear-gradient(to right, #e6e6ed, #0d0d0d);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+}
+
+
+/**/
 .specials .nav-tabs .nav-link {
   border: none;
   background-color: transparent;
@@ -432,35 +474,47 @@ border-radius: 5px;
   color:rgb(103, 131, 103);
   background-color: transparent;
   border-bottom: 2px solid var(--secondary-color);
+  /* background-color: #f1f1f1; */
 }
 
 .specials .tab-content {
   padding-top: 30px;
+  
+  border-radius: 10px;
 }
 
 /* Specials details styles */
 .specials .details h3 {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
+  color: black;
   margin-bottom: 15px;
 }
 
 .specials .details p {
-  color: #777;
+  /* color: #777; */
+  color: black;
   line-height: 1.8;
   margin-bottom: 15px;
 }
 
 .specials .details .fst-italic {
   font-style: italic;
-  color: #555;
+  /* color: #555; */
+  color: black;
   margin-bottom: 15px;
 }
 
-.specials .details img {
-  max-width: 100%;
+.specials  img {
+  /* max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-top: 15px;
+  border-radius: 10px;
+  margin-top: 15px; */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px rgb(135, 139, 133);
+  
 }
+
