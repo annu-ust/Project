@@ -450,7 +450,7 @@ border-radius: 5px;
   background-image: linear-gradient(to right, #e6e6ed, #0d0d0d);
 }
 
-.content {
+.gradient-border .content {
   position: relative;
   z-index: 1;
   background-color: white;
@@ -471,9 +471,10 @@ border-radius: 5px;
 
 .specials .nav-tabs .nav-link:hover,
 .specials .nav-tabs .nav-link.active {
-  color:rgb(103, 131, 103);
+  color:rgb(73, 133, 73);
   background-color: transparent;
   border-bottom: 2px solid var(--secondary-color);
+  /* background-image: linear-gradient(to right, #e6e6ed, #928d8d); */
   /* background-color: #f1f1f1; */
 }
 
